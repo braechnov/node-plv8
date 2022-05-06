@@ -8,7 +8,8 @@ const babelOptions = {
     require('babel-preset-env')
   ],
   plugins: [
-    require('babel-plugin-transform-remove-console')
+    require('babel-plugin-transform-remove-console'),
+    require('babel-plugin-syntax-object-rest-spread')
   ],
   ast: false,
   babelrc: false
@@ -27,7 +28,8 @@ module.exports = class PLV8 {
               require('babel-preset-env')
             ],
             plugins: [
-              require('babel-plugin-transform-remove-console')
+              require('babel-plugin-transform-remove-console'),
+              require('babel-plugin-syntax-object-rest-spread')
             ],
             ast: false,
             babelrc: false,
