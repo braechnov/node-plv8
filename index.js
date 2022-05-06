@@ -24,7 +24,7 @@ module.exports = class PLV8 {
           .transform(babelify, {
             global: true,
             presets: [
-              require('babel-preset-es2015')
+              require('babel-preset-env')
             ],
             plugins: [
               require('babel-plugin-transform-remove-console')
